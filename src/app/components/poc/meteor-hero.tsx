@@ -51,22 +51,25 @@ const MeteorHero = () => {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="flex flex-wrap gap-4 justify-center"
                     >
-                        <Button className="bg-black hover:bg-zinc-800 text-white dark:bg-white dark:hover:bg-zinc-100 dark:text-black px-6 py-6 rounded-full">
+                        <Button className="bg-black hover:bg-zinc-800 text-white dark:bg-white dark:hover:bg-zinc-100 dark:text-black px-6 h-[42] 
+                        rounded-lg">
                             Get Started
                             <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
 
-                        <Button variant="outline" className="bg-transparent border-zinc-300 text-black hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-900 px-6 py-6 rounded-full">
+                        <Button variant="outline" className="bg-transparent border-zinc-300 text-black hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-900 px-6 h-[42] 
+                        rounded-lg">
                             Learn More
                         </Button>
                     </motion.div>
 
                     {/* Trust component */}
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 1 }}
-                        className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400"
+                        className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400 "
                     >
                         <div className="flex -space-x-2">
                             <div className="w-8 h-8 rounded-full border-2 border-white dark:border-black bg-zinc-300 dark:bg-zinc-600"></div>
@@ -74,7 +77,7 @@ const MeteorHero = () => {
                             <div className="w-8 h-8 rounded-full border-2 border-white dark:border-black bg-zinc-500 dark:bg-zinc-400"></div>
                             <div className="w-8 h-8 rounded-full border-2 border-white dark:border-black bg-zinc-600 dark:bg-zinc-300"></div>
                         </div>
-                        <span className="text-sm">Trusted by 500+ legal teams worldwide</span>
+                        <span className="text-sm ">Trusted by 500+ legal teams worldwide</span>
                     </motion.div>
                 </div>
             </div>
