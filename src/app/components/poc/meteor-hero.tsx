@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 
 const MeteorHero = () => {
     return (
-        <div className="relative min-h-[90vh] overflow-hidden bg-white dark:bg-black flex items-center justify-center">
+        <div className="relative min-h-[90vh] overflow-hidden  flex items-center justify-center">
             {/* Meteors background effect */}
-            <Meteors number={30} />
+            <Meteors number={15} />
 
             <div className="container mx-auto px-4 z-10 relative">
                 <div className="flex flex-col items-center text-center gap-8 max-w-4xl mx-auto">
