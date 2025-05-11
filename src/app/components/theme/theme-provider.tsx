@@ -10,7 +10,7 @@ export function ThemeProvider({
     return (
         <NextThemesProvider
             {...props}
-            enableColorScheme
+            // enableColorScheme
             storageKey="theme-preference"
         >
             {children}

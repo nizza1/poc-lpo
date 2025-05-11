@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 // import { IconMenu2, IconX } from "@tabler/icons-react";
+import Image from "next/image";
 
 // const IconMenu2 = <div>menu</div>
 // const IconX = <div>x</div>
@@ -12,6 +13,7 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
+import { useTheme } from "next-themes";
 //import Image from "next/image";
 
 interface NavbarProps {
@@ -234,6 +236,10 @@ export const MobileNavToggle = ({
 };
 
 export const NavbarLogo = () => {
+
+    const { theme } = useTheme()
+
+    const bg = theme === 'dark' ? 'rgb(255,255,255,60)' : 'transparent'
     return (
         <Link
             href="#"
@@ -245,7 +251,15 @@ export const NavbarLogo = () => {
                 width={30}
                 height={30}
             /> */}
-            <h1 className="dark:text-white">logo</h1>
+            <h1 className="dark:text-white font-bold text-xl">
+                {/* LPO */}
+
+                <Image src='/lpoLOGO.svg' alt="lpo" width={60} height={60} className="p-1  rounded-lg object-contain w-[60px] h-[60px]" style={{
+                    backgroundColor: bg
+                }} />
+
+
+            </h1>
             {/* <span className="font-medium text-black dark:text-white">Startup</span> */}
         </Link>
     );

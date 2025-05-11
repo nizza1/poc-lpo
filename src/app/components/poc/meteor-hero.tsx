@@ -52,14 +52,14 @@ const MeteorHero = () => {
                         className="flex flex-wrap gap-4 justify-center"
                     >
                         <Button className="bg-black hover:bg-zinc-800 text-white dark:bg-white dark:hover:bg-zinc-100 dark:text-black px-6 h-[42] 
-                        rounded-lg">
-                            Get Started
+                        rounded-lg cursor-pointer">
+                            Book a call
                             <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
 
                         <Button variant="outline" className="bg-transparent border-zinc-300 text-black hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-900 px-6 h-[42] 
-                        rounded-lg">
-                            Learn More
+                        rounded-lg cursor-pointer">
+                            How it works
                         </Button>
                     </motion.div>
 

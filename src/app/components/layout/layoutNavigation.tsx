@@ -25,8 +25,8 @@ export function NavbarDemo({ children }: { children: React.ReactNode }) {
             link: "#services",
         },
         {
-            name: "Pricing",
-            link: "#pricing",
+            name: "About",
+            link: "#about",
         },
         {
             name: "Contact",
